@@ -6,14 +6,24 @@ import BlogList from "./components/BlogList";
 import BlogData from "./components/BlogData";
 import HomeServices from "./components/HomeServices";
 import HomeServiceData from "./components/HomeServiceData";
+import Slider from "react-slick";
+import HomeAbout from './components/HomeAbout'
 
 const Home = () =>{
+    var settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 1
+      };
     return(
         <>
         <HomeSlider />
+        <HomeAbout />
         <Testimnonials />
 
-        <section className="service-area bg-light pt-4 pb-4">
+    <section className="service-area bg-light pt-4 pb-5">
         <div className="container">
             <CommonHead 
                 title='Services'
@@ -21,15 +31,17 @@ const Home = () =>{
                 text='This well-known establishment acts as a one-stop destination servicing customers both local and from other parts of Hyderabad.'
             />
             <div className="service-slider pt-45">
+            <Slider {...settings}>
                 {
                     HomeServiceData.map((value, index) => {
                         return <HomeServices 
                             imgsrc = {value.imgsrc}
                             imagalt = {value.imgalt}
-                            title = {value.title}
+                            title = {value.title} 
                         />
                     })
                 }
+                </Slider>
             </div>
         </div>
     </section>

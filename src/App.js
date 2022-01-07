@@ -1,6 +1,9 @@
 import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle';
+import '../node_modules/react-slick/dist/react-slick';
+import '../node_modules/slick-carousel/slick/slick.css';
+import '../node_modules/slick-carousel/slick/slick-theme.css';
 import './css/meanmenu.css';
 import './css/animate.min.css';
 import './css/boxicons.min.css';

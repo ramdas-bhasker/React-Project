@@ -1,9 +1,13 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+
+
 const HomeServices = (props) =>{
+   
     return(
         <>
-            <div className="service-card">
+            
+                <div className="service-card">
                     <NavLink to=''>
                         <img src={props.imgsrc} alt={props.imgalt} />
                     </NavLink>
@@ -16,6 +20,7 @@ const HomeServices = (props) =>{
                         </NavLink>
                     </div>
                 </div>
+            
         </>
     );
 }

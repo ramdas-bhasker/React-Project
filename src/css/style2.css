@@ -5412,3 +5412,6 @@ Animation  CSS End
 .card-box a:hover {
     color: #ff743c;
 }
+.slick-slide{
+    padding: 0 10px;
+}
