@@ -77,23 +77,19 @@ const Footer = () =>{
                                 </li>
                                 <li>
                                     <i className='bx bxs-chevron-right'></i>
-                                    <NavLink to="/">About Us</NavLink>
+                                    <NavLink to="/about">About Us</NavLink>
                                 </li>
                                 <li>
                                     <i className='bx bxs-chevron-right'></i>
-                                    <NavLink to="/">Service</NavLink>
+                                    <NavLink to="/services">Service</NavLink>
                                 </li>
                                 <li>
                                     <i className='bx bxs-chevron-right'></i>
-                                    <NavLink to="/">Infrastructure</NavLink>
+                                    <NavLink to="/infra">Infrastructure</NavLink>
                                 </li>
                                 <li>
                                     <i className='bx bxs-chevron-right'></i>
-                                    <NavLink to="/">Achievements</NavLink>
-                                </li>
-                                <li>
-                                    <i className='bx bxs-chevron-right'></i>
-                                    <NavLink to="/">Contact</NavLink>
+                                    <NavLink to="/contact">Contact</NavLink>
                                 </li>
                             </ul>
                         </div>

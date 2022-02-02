@@ -6,21 +6,19 @@ const HomeServices = (props) =>{
    
     return(
         <>
-            
-                <div className="service-card">
+            <div className="service-card">
+                <NavLink to=''>
+                    <img src={props.imgsrc} alt={props.imgalt} />
+                </NavLink>
+                <div className="service-content">
                     <NavLink to=''>
-                        <img src={props.imgsrc} alt={props.imgalt} />
+                        <h3>{props.title}</h3>
                     </NavLink>
-                    <div className="service-content">
-                        <NavLink to=''>
-                            <h3>{props.title}</h3>
-                        </NavLink>
-                        <NavLink to='' className="more-btn">
-                            <i className='bx bx-chevron-right'></i>
-                        </NavLink>
-                    </div>
+                    <NavLink to='' className="more-btn">
+                        <i className='bx bx-chevron-right'></i>
+                    </NavLink>
                 </div>
-            
+            </div>
         </>
     );
 }

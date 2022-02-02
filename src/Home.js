@@ -35,6 +35,7 @@ const Home = () =>{
                 {
                     HomeServiceData.map((value, index) => {
                         return <HomeServices 
+                            key={index}
                             imgsrc = {value.imgsrc}
                             imagalt = {value.imgalt}
                             title = {value.title} 
@@ -56,6 +57,7 @@ const Home = () =>{
                     {
                         BlogData.map((value, index) =>{
                             return <BlogList 
+                                key={index}
                                 imgsrc = {value.imgsrc}
                                 imgalt = {value.imgalt}
                                 title = {value.title}
